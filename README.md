@@ -45,6 +45,9 @@ Observações sobre os campos anteriores.
 1. Cadastro  
   Onde ficará os campos para cadatro do cliente e da empresa com os campos referidos acima.
 
+1.  Video Conferencia
+  Tela onde os usuários e a responsavel pela contratação da empresa se comunicarão por video conferencia.
+
 ### Telas para usuário
 
 1. Perfil  
@@ -57,3 +60,14 @@ Observações sobre os campos anteriores.
   Onde ficará as notificaçõe de agendamento de entrevista, alguns alertas e etc.
 
 ### Telas de Empresas
+
+1. Perfil da empresa:  
+  Onde ficará o perfil da empresa e também é local onde poderá ser feita as alterações no perfil.
+
+1. Pesquisa de candidato:
+  Onde ficará campos que deverão serr selecionados para empresa para que seja gerada uma lista e de candidatos e assim que for clicadado no canditato o perfil do mesmo e o botão para que seja agendado a conferencia.
+
+1. Agendamento de conferencia:  
+  Onde ficará as informações para agendar uma conferencia com o canditato.
+
+Data: 23/05/2020
