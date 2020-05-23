@@ -5,6 +5,16 @@ class Pessoa(models.Model):
     MASCULINO = 'M'
     FEMININO = 'F'
 
+    EF = 'EF'
+    EM = 'EM'
+    ES = 'ES'
+
+    FORMACAO = (
+        (EM , 'Ensino Fundamental Completo'),
+        (EF , 'Ensino Médio Completo'),
+        (ES , 'Ensino Superior Completo')
+    )
+
     SEXOS = (
         (MASCULINO, 'Masculino'),
         (FEMININO, 'Feminino')
@@ -14,9 +24,10 @@ class Pessoa(models.Model):
         max_length=50
     )
     email = models.EmailField()
-    idade = models.IntegerField()
+    data_nascimento = models.DateField()
     formacao = models.CharField(
-        max_length=50
+        max_length=50,
+        choices=FORMACAO
     )
     auto_descricao = models.CharField(
         max_length=50
