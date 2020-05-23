@@ -23,7 +23,7 @@ class PessoaAdmin(admin.ModelAdmin):
 class EmpresaAdmin(admin.ModelAdmin):
     list_display = (
         'nome_da_empresa',
-        'segmentos',
+        'segmento',
         'telefone_empresarial',
         'email',
     )
