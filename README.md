@@ -1,6 +1,16 @@
 # hackinghelp2020
 
+### Requisitos para Cadastros
 
-### 23/05/2020
-  Teste de alteração
-  
+Usuários: 
+- Nome Completo
+- Idade
+- Formação
+- Atributos do usuário
+- Descrição
+- Contato
+
+Empresas:
+- Nome da empresa
+- Segmento
+- Contatos
