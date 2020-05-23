@@ -49,40 +49,34 @@ class Pessoa(models.Model):
         max_length=1,
         choices=SEXOS
     )
-    atributos = models.CharField(
-        max_length=80,
+    atributo = models.ForeignKey(
+        to='app.Atributo',
+        on_delete=models.DO_NOTHING
     )
 
 
 class Empresa(models.Model):
-    ALIMENTACO = ' '
-    BEBIDAS = ' '
-    BANACARIO = ' '
-    VESTUARIO = ' '
-    SAUDE = ' '
-    EDUCACAO= ' '
-    INFORMATICA=' '
-    OUTRO=' '
-
-    SEGMENTOS = (
-        (ALIMENTACO, 'Alimentação'),
-        (BEBIDAS, 'Bebidas'),
-        (BANACARIO, 'Bancário'),
-        (VESTUARIO, 'Vestuário'),
-        (SAUDE, 'Saúde'),
-        (EDUCACAO, 'Educação'),
-        (INFORMATICA, 'Informática'),
-        (OUTRO, 'Outros'),
-    )
-
+   
     nome_da_empresa = models.CharField(
         max_length=50
     )
-    segmentos = models.CharField (
-        max_length=1,
-        choices=SEGMENTOS,
+    segmento = models.ForeignKey(
+        to='app.Segmento',
+        on_delete=models.DO_NOTHING
     )
     telefone_empresarial= models.CharField(
         max_length=20,
     )
     email = models.EmailField()
+
+class Segmento(models.Model):
+    
+    nome_segmento = models.CharField (
+        max_length=300,
+    )
+
+class Atributo(models.Model):
+    
+    nome_atributo = models.CharField (
+        max_length=300,
+    )
