@@ -1,5 +1,5 @@
 from django.contrib import admin
-from app.models import Pessoa
+from app.models import Pessoa, Empresa
 
 
 @admin.register(Pessoa)
@@ -10,7 +10,7 @@ class PessoaAdmin(admin.ModelAdmin):
         'data_nascimento',
         'formacao',
         'auto_descricao',
-        'sexo'
+        'sexo',
     )
     search_fields = (
         'nome_completo',
@@ -19,4 +19,11 @@ class PessoaAdmin(admin.ModelAdmin):
     list_filter = (
         'sexo',
     )
-
+@admin.register(Empresa)
+class EmpresaAdmin(admin.ModelAdmin):
+    list_display = (
+        'nome_da_empresa',
+        'segmentos',
+        'telefone_empresarial',
+        'email',
+    )
