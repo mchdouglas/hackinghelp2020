@@ -7,7 +7,7 @@ class PessoaAdmin(admin.ModelAdmin):
     list_display = (
         'nome_completo',
         'email',
-        'idade',
+        'data_nascimento',
         'formacao',
         'auto_descricao',
         'sexo'
