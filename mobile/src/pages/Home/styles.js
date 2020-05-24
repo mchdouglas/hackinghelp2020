@@ -5,7 +5,6 @@ export default StyleSheet.create({
     flex: 1,
   },
   navBar: {
-    backgroundColor: '#3498db',
     height: 50,
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -17,7 +16,7 @@ export default StyleSheet.create({
   },
   navText: {
     fontSize: 18,
-    marginLeft: 15,
+    left: 0,
   },
   flatList: {
     margin: 5,

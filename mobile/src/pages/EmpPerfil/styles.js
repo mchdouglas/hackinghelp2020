@@ -57,4 +57,9 @@ export default StyleSheet.create({
   buttonImage: {
     height: 50,
   },
+  inputMult: {
+    width: '95%',
+    marginBottom: 15,
+    marginLeft: 10,
+  },
 });

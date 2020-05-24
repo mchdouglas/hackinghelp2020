@@ -1,7 +1,7 @@
 import React from 'react';
 import {useNavigation} from '@react-navigation/native';
 import {Image, SafeAreaView, View, FlatList} from 'react-native';
-import {Card, Text, Button} from 'react-native-paper';
+import {Card, Text, Button, Appbar} from 'react-native-paper';
 
 import styles from './styles';
 
@@ -11,31 +11,37 @@ export default () => {
   return (
     <SafeAreaView>
       <View>
-        <View style={styles.navBar}>
-          <View style={styles.nameImage}>
-            <Image
-              style={styles.stretch}
-              source={{
-                uri:
-                  'https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png',
-              }}
-            />
-            <Text style={styles.navText}>Marlon Rodrigues</Text>
-          </View>
-          <Button
-            icon={{
+        <Appbar.Header style={styles.navBar}>
+          <Image
+            style={styles.stretch}
+            source={{
               uri:
-                'https://www.pngfind.com/pngs/m/339-3396821_png-file-svg-download-icon-logout-transparent-png.png',
+                'https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png',
             }}
-            onPress={() => navigation.navigate('InicialScreen')}
           />
-        </View>
+          <Button
+            mode="contained"
+            onPress={() => navigation.navigate('Perfil')}>
+            Marlon Rodrigues
+          </Button>
+          <View style={styles.icons}>
+            <Appbar.Action
+              icon="logout"
+              onPress={() => navigation.navigate('InicialScreen')}
+            />
+          </View>
+        </Appbar.Header>
+        <Button onPress={() => navigation.navigate('Conferencia')}>
+          Sala de conferência
+        </Button>
         <FlatList
           style={styles.flatList}
           data={list}
           keyExtractor={item => String(item)}
           renderItem={({item}) => (
-            <Card style={styles.card}>
+            <Card
+              style={styles.card}
+              onPress={() => navigation.navigate('PerfilEmp', {item})}>
               <View style={styles.separador}>
                 <View>
                   <Image
