@@ -45,18 +45,21 @@ export default () => {
           </Button>
         </View>
         <TextInput
+          onChange={text => setNome(text)}
           style={styles.input}
           value={nome}
           label="Nome completo"
           mode="outlined"
         />
         <TextInput
+          onChange={text => setDate(text)}
           value={date}
           style={styles.input}
           label="Data de nascimento"
           mode="outlined"
         />
         <TextInput
+          onChange={text => setFormacao(text)}
           style={styles.input}
           value={formacao}
           label="Formação"
@@ -64,10 +67,6 @@ export default () => {
         />
         <View style={styles.allRadio}>
           <Text style={styles.textRadio}>Atributos: </Text>
-          <View style={styles.radioGroup}>
-            <Text style={styles.sizeRadio}>Pontual</Text>
-            <TouchableOpacity style={styles.circle} />
-          </View>
           <View style={styles.radioGroup}>
             <Text style={styles.sizeRadio}>Dedicado</Text>
             <TouchableOpacity style={styles.circle}>
@@ -94,18 +93,21 @@ export default () => {
           </View>
         </View>
         <TextInput
+          onChange={text => setContato(text)}
           style={styles.input}
           label="Contato"
           value={contato}
           mode="outlined"
         />
         <TextInput
+          onChange={text => setLogin(text)}
           style={styles.input}
           value={login}
           label="Login"
           mode="outlined"
         />
         <TextInput
+          onChange={text => setSenha(text)}
           style={styles.input}
           value={senha}
           label="Senha"
