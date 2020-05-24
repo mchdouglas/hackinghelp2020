@@ -1,43 +1,45 @@
 import {StyleSheet} from 'react-native';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
 
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
+export default StyleSheet.create({
   body: {
-    backgroundColor: Colors.white,
+    flex: 1,
   },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  navBar: {
+    backgroundColor: '#3498db',
+    height: 50,
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    flexDirection: 'row',
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
+  nameImage: {
+    alignItems: 'center',
+    flexDirection: 'row',
   },
-  sectionDescription: {
-    marginTop: 8,
+  navText: {
     fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
+    marginLeft: 15,
   },
-  highlight: {
-    fontWeight: '700',
+  flatList: {
+    margin: 5,
   },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
+  stretch: {
+    margin: 5,
+    width: 40,
+    height: 40,
+    resizeMode: 'stretch',
+  },
+  card: {
+    width: '97%',
+    height: 70,
+    borderRadius: 2,
+    backgroundColor: '#D3D3D3',
+    marginBottom: 5,
+  },
+  separador: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  },
+  desc: {
+    alignSelf: 'center',
   },
 });
-
-export default styles;
