@@ -1,73 +1,53 @@
-# hackinghelp2020
+<h1 align="center">
+  Jobs Opportunities
+ </h1>
 
-### Requisitos para Cadastros
 
-Usuários: 
-- Nome Completo
-- Idade
-- Formação
-- Atributos do usuário
-- Descrição
-- Contato
+<h4 align="center">
+  🚀 SolutionsTeam
+</h4>
 
-Empresas:
-- Nome da empresa
-- Segmento
-- Contatos
 
-Atributos de usuários:  
-- Pontualidade
-- Dinamico
-- Comunicativo
-- e etc.
 
-Segmento: 
-- Transporte
-- Alimenticio
-- Saude
-- Tecnologia
-- e etc
+<br>
+
+<p align="center">
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;
+</p>
+
+<br>
+
+
+![tela1](https://user-images.githubusercontent.com/43655755/82762735-b85bbe00-9dd0-11ea-929a-a1b0ad1e3733.png)
+
+![tela2](https://user-images.githubusercontent.com/43655755/82762736-ba258180-9dd0-11ea-8b73-fa074eb6bd18.png)
+
+![tela3](https://user-images.githubusercontent.com/43655755/82762737-bbef4500-9dd0-11ea-9c0d-3037f69eba2d.png)
+
+![tela4](https://user-images.githubusercontent.com/43655755/82762743-c01b6280-9dd0-11ea-9338-552e78258e1d.png)
+
+![tela5](https://user-images.githubusercontent.com/43655755/82762744-c0b3f900-9dd0-11ea-89a8-2c046155b5b0.png)
+
+
+
+## :rocket: Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [Vue.js](https://vuejs.org/)
+- [Django-rest-framework](https://www.django-rest-framework.org/)
+- [React Native](https://facebook.github.io/react-native/)
+
+## 💻 Projeto
+
+O Jobs Opportunities é uma plataforma que visa conectar as empresas com os profissionais através de um algoritmo de inteligência.Na plataforma existe várias funcionalidades, uma delas é a reunião de entrevista de maneira totalmente online.
+O sistema consiste em fazer o match entres ambas as partes e de acordo com o perfil desejado.
+
+
+
 
 ---
-Observações sobre os campos anteriores.
 
-1.  Descrição:   
-  Onde ficará a breve resumo do usuário sobre si mesmo.
+Feito com ♥ by Michael :wave: [Meu LinkedIn](https://www.linkedin.com/in/mchdouglas)
 
-1. Segmento:   
-  Onde o responsável pela empressa dirá de qual segmento se trata a empresa para que usuários possam ver o perfil da empresa.
-
-  ---
-### Telas Gerais
-1. Home   
-  Onde ficará algum conteudo sobre contratações e onde ficará botão para entrar com a conta no sistema
-
-1. Cadastro  
-  Onde ficará os campos para cadatro do cliente e da empresa com os campos referidos acima.
-
-1.  Video Conferencia
-  Tela onde os usuários e a responsavel pela contratação da empresa se comunicarão por video conferencia.
-
-### Telas para usuário
-
-1. Perfil  
-  Onde o usuário encontrará e podera alterar as informações do perfil.
-
-1. Lista de empresas  
-  Onde ficará uma lista de empresas onde o o usuário poderá ver o perfil da empresa.
-
-1. Notificações:  
-  Onde ficará as notificaçõe de agendamento de entrevista, alguns alertas e etc.
-
-### Telas de Empresas
-
-1. Perfil da empresa:  
-  Onde ficará o perfil da empresa e também é local onde poderá ser feita as alterações no perfil.
-
-1. Pesquisa de candidato:
-  Onde ficará campos que deverão serr selecionados para empresa para que seja gerada uma lista e de candidatos e assim que for clicadado no canditato o perfil do mesmo e o botão para que seja agendado a conferencia.
-
-1. Agendamento de conferencia:  
-  Onde ficará as informações para agendar uma conferencia com o canditato.
-
-Data: 23/05/2020
