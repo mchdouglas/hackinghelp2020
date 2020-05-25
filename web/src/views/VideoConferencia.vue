@@ -261,7 +261,7 @@
 
 <v-divider/>
   <v-card max-width="375">
-    <v-img src="https://media-exp1.licdn.com/dms/image/C4E03AQH2Z8bhTOaXwQ/profile-displayphoto-shrink_200_200/0?e=1596067200&v=beta&t=xrFcehlcmVQv344RxkksJIqh8pOnXo7jWcZCIVl5XAM" height="300px" dark>
+    <v-img src="" height="300px" dark>
       <v-row class="fill-height">
         <v-card-title>
           <v-btn dark icon>
